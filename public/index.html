@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/pipperlogo.png">
+    <title>Pipper</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Vesntre side div -->
+        <div>
+            <div>
+                <img id="logo" src="images/pipperlogo.png" alt="pipperlogo">
+            </div>
+
+
+            <nav id="menu">
+
+                <li>
+                    <img class="menubilleder" src="images/Hjem.png" alt="hjem">
+                    <a href="index.html">Forside</a>
+                </li>
+                <li>
+                    <img class="menubilleder" src="images/Hashtag.png" alt="hashtag">
+                    <a href="#">Udforsk</a>
+                </li>
+                <li>
+                    <img class="menubilleder" src="images/Klokke.png" alt="klokke">
+                    <a href="#">Meddelelser</a>
+                </li>
+                <li>
+                    <img class="menubilleder" src="images/Besked.png" alt="besked">
+                    <a href="#">Beskeder</a>
+                </li>
+                <li>
+                    <img class="menubilleder" src="images/bookmark.png" alt="bogmærke">
+                    <a href="#">Bogmærke</a>
+                </li>
+                <li>
+                    <img class="menubilleder" src="images/Liste.png" alt="liste">
+                    <a href="#">Lister</a>
+                </li>
+                <li>
+                    <img class="menubilleder" src="images/Profil.png" alt="profil">
+                    <a href="#">Profil</a>
+                </li>
+                <li>
+                    <img class="menubilleder" src="images/Mere.png" alt="mere">
+                    <a href="#">Mere</a>
+                </li>
+
+                <form action="">
+                    <button id="pipknap" type="button">Pip</button>
+                </form>
+
+            </nav>
+
+        </div>
+
+
+        <!-- Midten div -->
+        <div class="midterdiv">
+            <h3 id="overskrift"> Forside</h3>
+            <!-- <textarea id="w3review" name="w3review" rows="4" cols="50">
+                Hvad sker der?
+                </textarea> -->
+
+                <div class="midten">
+                <button class="open-button" onclick="openForm()">Hvad sker der</button>
+
+<div class="form-popup" id="myForm">
+  <form onsubmit="sendPost()" class="form-container">
+    <h1>Pip</h1>
+
+    <label for="username"><b>Brugernavn</b></label>
+    <input type="text" id="username" placeholder="Brugernavn"  required>
+
+    <label for="message" cols="20" rows="20"><b>Besked</b></label>
+    <textarea name="textarea" id="textarea" cols="30" rows="5" required placeholder="Besked" maxlength="255" autofocus></textarea>
+    <div id="the-count">
+        <span id="count">0</span>
+        <span>/255</span>
+      </div>
+
+    <button type="submit" class="btn" id="submit">Pip</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    
+  </form>
+</div>
+
+<div class="form-popup" id="update_myForm">
+    <form class="form-container">
+      <h1>Rediger Pip</h1>
+  
+      <label for="username"><b>Brugernavn</b></label>
+      <input type="text" id="update_username" placeholder="Brugernavn"  required>
+  
+      <label for="message" cols="20" rows="20"><b>Besked</b></label>
+      <textarea name="textarea" id="update_textarea" cols="30" rows="5" required placeholder="Besked" maxlength="255" autofocus></textarea>
+      <div id="update_the-count">
+          <span id="update_count">0</span>
+          <span>/255</span>
+        </div>
+  
+      <button type="submit" class="btn" id="update_submit">Rediger pip</button>
+      <button type="button" class="btn cancel" onclick="closeUpdateForm()">Close</button> 
+      
+    </form>
+  </div>
+
+</div>
+
+        </div>
+
+        <!-- Højre side div -->
+        <div>
+            
+            <input type="text" id="search" onkeyup="myFunction()" placeholder="Søg på Pipper">
+
+            <div>
+                <ul id="liste">
+                    <h3>Trends til dig</h3>
+                    <li>
+                        <p class="lilletekst">Trender i Danmark</p>
+                        <a class="listetekst" href="#">Film</a>
+                        <p class="lilletekst">6.739 pips</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <p class="lilletekst">Trender i Danmark</p>
+                        <a class="listetekst" href="#">Wagner</a>
+                        <p class="lilletekst">18,8 t pips</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <p class="lilletekst">Trender i Danmark</p>
+                        <a class="listetekst" href="#">Søren Pind</a>
+                        <p class="lilletekst">68,8 t pips</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <p class="lilletekst">Trender i Danmark</p>
+                        <a class="listetekst" href="#">Netto</a>
+                        <p class="lilletekst">5.552 pips</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <p class="lilletekst">Trender i Danmark</p>
+                        <a class="listetekst" href="#">LinkedIn</a>
+                        <p class="lilletekst">6.739 pips</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <p class="lilletekst">Teknologi - Trending</p>
+                        <a class="listetekst" href="#">Iphone 14</a>
+                        <p class="lilletekst">51,8 t pips</p>
+                    </li>
+                    <hr>
+                    <li>
+                        <p class="lilletekst">Teknologi - Trending</p>
+                        <a class="listetekst" href="#">Apple Event</a>
+                        <p class="lilletekst">783 t pips</p>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

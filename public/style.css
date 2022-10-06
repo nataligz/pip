@@ -1,0 +1,229 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.container > div{
+margin: 20px;
+width: 30%;
+background-color: #ffffff;
+}
+
+/*Pip loget i venstre side*/
+#logo{
+    width: 8%;
+    height: 8%;
+    padding-left: 10%;
+    font-size: 15px;
+}
+
+/*Menuen i venstre side*/
+#menu{
+    padding-left: 10%;
+    padding-top: 3%;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 14;
+    margin: 8px;
+}
+
+/*Den røde pipknap i vestre side*/
+#pipknap{
+    margin: 1%;
+    background-color: #DD2D44;
+    border-radius: 50px;
+    padding: 2% 17% 2% 17%;
+    border: #c2273b;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Overskriften i midten, over hvor der laves opslag*/
+#overskrift{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.midten{
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  width: 400px;
+  margin: 20px;
+  padding: 5px;
+  border: 1px dotted grey;
+  border-radius: 10px;
+}
+
+/*Søg funktion over listen i højre side*/
+#search{
+    background-color:#f1f3f4;
+    background-image: url(/images/search.png);
+    background-repeat: no-repeat;
+    padding-right: 53%;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Den grå liste i højre side*/
+#liste{
+    background-color: #f7f9f9;
+    border-radius: 20px;
+    margin-right: 5%;
+    list-style-type: none;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Den lille tekst i listen*/
+.lilletekst{
+    font-size: 12px;
+    color: #a0a7ad;
+}
+
+.listetekst{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/*Styling inde i listen*/
+hr{
+    color: #000000;
+}
+
+.menubilleder{
+    width: 10%;
+    height: 10%;  
+}
+
+
+
+
+/* https://codepen.io/patrickwestwood/pen/gPPywv */
+#the-count {
+  float: right;
+  padding: 0.1rem 0 0 0;
+  font-size: 0.875rem;
+}
+
+
+
+
+/* Hentet/Lånt fra w3schools.com */
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: white;
+    color: grey;
+    padding: 16px 20px;
+    border: 1px dotted grey;
+    cursor: pointer;
+    opacity: 0.8;
+    /* position: fixed; */
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: -50px;
+  }
+  /* rgb(75, 75, 75) */
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    border: 1px dotted grey;
+    border-radius: 10px;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 500px;
+    margin-left: -50px;
+    padding: 10px;
+    background-color: white;
+  }
+ 
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .form-container textarea{
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+   
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #DD2D44;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    border-radius: 50px;
+    
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: grey;
+    border-radius: 50px;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .avatar{
+    width: 70px;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .button{
+    width: 50%;
+    background-color: #c2273b;
+    border: white solid;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
